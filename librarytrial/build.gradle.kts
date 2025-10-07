@@ -18,6 +18,9 @@ afterEvaluate {
     }
 }
 
+group = "com.github.vishalgupta-spec"
+version = "1.0.0"
+
 
 android {
     namespace = "com.example.librarytrial"
