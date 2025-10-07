@@ -1,0 +1,8 @@
+jdk:
+  - openjdk17
+
+before_install:
+  - echo "Building only library module..."
+
+install:
+  - ./gradlew :librarytrial:publishToMavenLocal
