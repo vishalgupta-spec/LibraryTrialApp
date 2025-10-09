@@ -56,6 +56,6 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-    implementation("com.vsg_librarytrial:vsg_librarytrial:1.0.0")
+    implementation("com.github.vishalgupta-spec:LibraryTrialApp:Tag")
 
 }
