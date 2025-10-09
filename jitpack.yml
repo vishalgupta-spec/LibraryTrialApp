@@ -2,7 +2,7 @@ jdk:
   - openjdk17
 
 before_install:
-  - echo "Building only the library module..."
+  - echo "Building only library module"
 
 install:
-  - ./gradlew :librarytrial:assembleRelease :librarytrial:publishToMavenLocal
+  - ./gradlew :librarytrial:assembleRelease

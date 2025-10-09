@@ -1,12 +1,6 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -22,10 +16,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "LibraryTrialApp"
 
-// Always include your library
 include(":librarytrial")
 
-// Only include the app when NOT building on JitPack
+// Exclude app during JitPack build
 if (System.getenv("JITPACK") == null) {
     include(":app")
 }
