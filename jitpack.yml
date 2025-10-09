@@ -5,4 +5,4 @@ before_install:
   - echo "Building only the library module..."
 
 install:
-  - ./gradlew :librarytrial:publishToMavenLocal
+  - ./gradlew :librarytrial:assembleRelease :librarytrial:publishToMavenLocal
