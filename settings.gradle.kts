@@ -22,10 +22,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "LibraryTrialApp"
 
-// Always include the library module
+// Always include your library
 include(":librarytrial")
 
-// Only include the app module when NOT building on JitPack
+// Only include the app when NOT building on JitPack
 if (System.getenv("JITPACK") == null) {
     include(":app")
 }
