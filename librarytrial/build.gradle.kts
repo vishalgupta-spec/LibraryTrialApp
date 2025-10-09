@@ -10,9 +10,9 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.vsg_librarytrial"
+                groupId = "com.github.vishalgupta-spec"
                 artifactId = "vsg_librarytrial"
-                version = "1.0.0"
+                version = "v1.0.0"
             }
         }
     }
